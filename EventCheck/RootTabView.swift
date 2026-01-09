@@ -33,4 +33,6 @@ struct RootTabView: View {
 #Preview {
     RootTabView()
         .environmentObject(ThemeManager())
+        .environmentObject(SessionManager())
+
 }

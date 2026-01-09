@@ -23,4 +23,6 @@ struct AuthSwitcherView: View {
 
 #Preview {
     AuthSwitcherView()
+        .environmentObject(SessionManager())
+
 }

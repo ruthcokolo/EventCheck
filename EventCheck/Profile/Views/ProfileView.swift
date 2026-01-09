@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject private var themeManager: ThemeManager
+    @EnvironmentObject private var session: SessionManager
 
     // demo data (replace later)
     private let name = "Sarah Chen"
@@ -121,13 +122,12 @@ struct ProfileView: View {
 
     private var logoutButton: some View {
         Button {
-            // TODO: hook to auth later
+            // TODO: hook to auth
+            session.logOut()
             print("Log out tapped")
         } label: {
             HStack(spacing: 10) {
-                Image(systemName: "rectangle.portrait.and.arrow.right")
-                Text("Log Out")
-                    .font(.system(size: 17, weight: .semibold))
+                Label("Log Out", systemImage: "arrow.right.square")
             }
             .foregroundStyle(.red)
             .frame(maxWidth: .infinity)
@@ -146,4 +146,5 @@ struct ProfileView: View {
 #Preview {
     ProfileView()
         .environmentObject(ThemeManager())
+        .environmentObject(SessionManager())
 }

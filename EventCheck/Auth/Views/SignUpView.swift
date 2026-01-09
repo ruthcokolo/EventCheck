@@ -80,4 +80,6 @@ struct SignUpView: View {
 
 #Preview {
     SignUpView(mode: .constant(.signup))
+        .environmentObject(SessionManager())
+
 }
