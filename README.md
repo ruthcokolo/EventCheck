@@ -92,7 +92,8 @@ This project was built as a **portfolio demo** to showcase:
 <img width="308" height="602" alt="eventsScreen" src="https://github.com/user-attachments/assets/7dcf3a3c-4cf0-4444-b87e-9822e12780a2" />
 
 ### Activity
-<img width="414" height="816" alt="activity" src="https://github.com/user-attachments/assets/40e9845d-5803-49b1-9989-af63c4bad6c7" />
+<img width="318" height="602" alt="activity" src="https://github.com/user-attachments/assets/62e5964d-7f65-4002-8a67-886185cf1614" />
+
 
 ### Profile
 <img width="312" height="610" alt="profile" src="https://github.com/user-attachments/assets/22ccca6a-ec91-48ad-ae6c-25a7b8638425" />
