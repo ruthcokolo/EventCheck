@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 struct AuthSegmentedControl: View {
-    @Binding var selected: LoginView.AuthMode
+    @Binding var selected: AuthMode
     
     var body: some View {
         HStack(spacing: 0) {
@@ -23,7 +23,7 @@ struct AuthSegmentedControl: View {
         .shadow(color: .black.opacity(0.06), radius: 10, x: 0, y: 6)
     }
     
-    private func segment(_ mode: LoginView.AuthMode) -> some View {
+    private func segment(_ mode: AuthMode) -> some View {
         Button {
             selected = mode
         } label: {
