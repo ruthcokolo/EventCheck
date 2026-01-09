@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct EventCheckApp: App {
+    @StateObject private var themeManager = ThemeManager()
+
     var body: some Scene {
         WindowGroup {
-            AuthSwitcherView()
+            RootTabView()
+                .environmentObject(themeManager)
+                .preferredColorScheme(themeManager.theme.colorScheme)
         }
     }
 }
